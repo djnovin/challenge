@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form class="flex flex-col gap-y-8" id="uploadForm" enctype="multipart/form-data">
+    <div class="flex items-center justify-center w-full">
+        <label
+            class="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-400 rounded-lg cursor-pointer hover:cursor-pointer hover:border-gray-600 hover:bg-gray-100">
+            <div class="flex flex-row gap-4 items-center justify-center">
+                <p class="tracking-wider text-gray-400 group-hover:text-gray-600">Select a file</p>
+            </div>
+            <input class="opacity-0 hidden" id="fileInput" type="file" name="files" multiple accept=".mp4"
+                onchange="previewFiles()" />
+        </label>
+    </div>
+    <div id="filePreview" class="flex flex-wrap gap-4"></div>
+    <button
+        class="shadow-sm md:w-full md:shadow-none bg-black absolute md:static bottom-4 left-4 right-4 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-800 text-white py-2 rounded-md "
+        type="button" id="uploadButton" onclick="uploadFiles()" disabled>Upload</button>
+</form>
+
+<div id="toast"
+    class="fixed md:bottom-4 bottom-20 right-4 md:right-20 hidden bg-white border-solid border-gray-400 border text-gray-900 py-2 px-4 rounded-md shadow-md">
+    Files uploaded successfully.
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    function previewFiles() {
+        const preview = document.getElementById('filePreview');
+        const files = document.getElementById('fileInput').files;
+        const uploadButton = document.getElementById('uploadButton');
+
+        preview.innerHTML = '';
+
+        if (files.length > 0) {
+            uploadButton.disabled = false;
+            Array.from(files).forEach(file => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'p-2 border border-gray-300 rounded-md';
+                fileItem.innerText = file.name;
+                preview.appendChild(fileItem);
+            });
+        } else {
+            uploadButton.disabled = true;
+        }
+    }
+
+    async function uploadFiles() {
+        const form = document.getElementById('uploadForm');
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                alert('Files uploaded successfully.');
+                clearPreviewAndReset();
+                showToast();
+                loadCatalogue();
+            } else {
+                alert('Error uploading files.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error uploading files.');
+        }
+    }
+
+    function clearPreviewAndReset() {
+        document.getElementById('filePreview').innerHTML = '';
+        document.getElementById('fileInput').value = '';
+        document.getElementById('uploadButton').disabled = true;
+    }
+
+    function showToast() {
+        const toast = document.getElementById('toast');
+        toast.classList.remove('hidden');
+        gsap.fromTo(toast, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
+
+        setTimeout(() => {
+            gsap.to(toast, { y: 0, x: 100, opacity: 0, duration: 1, onComplete: () => toast.classList.add('hidden') });
+        }, 3000);
+    }
+
+    async function loadCatalogue() {
+        const response = await fetch('/Home/Catalogue');
+        const catalogue = await response.text();
+        document.getElementById('catalogue').innerHTML = catalogue;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCatalogue();
+    });
+</script>
+<script src="~/dist/index.js"></script>
