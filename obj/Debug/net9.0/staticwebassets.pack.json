@@ -29,14 +29,6 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-04-18 18-33-53.mp4",
-      "PackagePath": "staticwebassets/media/2023-04-18 18-33-53.mp4"
-    },
-    {
-      "Id": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-10-06.mp4",
-      "PackagePath": "staticwebassets/media/2023-12-18_13-10-06.mp4"
-    },
-    {
       "Id": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-17-25.mp4",
       "PackagePath": "staticwebassets/media/2023-12-18_13-17-25.mp4"
     },
@@ -55,10 +47,6 @@
     {
       "Id": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-31-29.mp4",
       "PackagePath": "staticwebassets/media/2023-12-18_13-31-29.mp4"
-    },
-    {
-      "Id": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-31-58.mp4",
-      "PackagePath": "staticwebassets/media/2023-12-18_13-31-58.mp4"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props",

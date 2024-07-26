@@ -41,3 +41,4 @@
 /Users/novinnoori/novin-challenge/backend/obj/Debug/net9.0/compressed/2533qxabll.gz
 /Users/novinnoori/novin-challenge/backend/obj/Debug/net9.0/compressed/1fwu11ly4v.gz
 /Users/novinnoori/novin-challenge/backend/obj/Debug/net9.0/compressed/jh5b3xxv71.gz
+/Users/novinnoori/novin-challenge/backend/obj/Debug/net9.0/backend.sourcelink.json

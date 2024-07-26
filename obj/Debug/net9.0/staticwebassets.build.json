@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IYgTZnrQIiRIQcAK+EWGEzeDpEbfp8a8FTJzsoenjKI=",
+  "Hash": "Wmizmon5gNeM4MGKgBJye/GolRoJ6GlCiWHZTUxKu88=",
   "Source": "backend",
   "BasePath": "_content/backend",
   "Mode": "Default",
@@ -321,44 +321,6 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-04-18 18-33-53.mp4",
-      "SourceId": "backend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/novinnoori/novin-challenge/backend/wwwroot/",
-      "BasePath": "_content/backend",
-      "RelativePath": "media/2023-04-18 18-33-53.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/media/2023-04-18 18-33-53.mp4"
-    },
-    {
-      "Identity": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-10-06.mp4",
-      "SourceId": "backend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/novinnoori/novin-challenge/backend/wwwroot/",
-      "BasePath": "_content/backend",
-      "RelativePath": "media/2023-12-18_13-10-06.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/media/2023-12-18_13-10-06.mp4"
-    },
-    {
       "Identity": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-17-25.mp4",
       "SourceId": "backend",
       "SourceType": "Discovered",
@@ -452,25 +414,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/media/2023-12-18_13-31-29.mp4"
-    },
-    {
-      "Identity": "/Users/novinnoori/novin-challenge/backend/wwwroot/media/2023-12-18_13-31-58.mp4",
-      "SourceId": "backend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/novinnoori/novin-challenge/backend/wwwroot/",
-      "BasePath": "_content/backend",
-      "RelativePath": "media/2023-12-18_13-31-58.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/media/2023-12-18_13-31-58.mp4"
     }
   ]
 }
