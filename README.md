@@ -1,29 +1,7 @@
-# Rsbuild Project
+# How To Run
 
-## Setup
+```zsh
 
-Install the dependencies:
+dotnet run
 
-```bash
-pnpm install
-```
-
-## Get Started
-
-Start the dev server:
-
-```bash
-pnpm dev
-```
-
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
 ```
